@@ -1,0 +1,98 @@
+/* 5_css1.css */
+
+/* Page background and base text */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e9efea; /* light gray/green */
+  color: #222;
+}
+
+/* Top header aligned + sized */
+h1 {
+  margin: 18px 0 6px 22px;  /* left aligned */
+  font-size: 48px;          /* large like the screenshot usually shows */
+  font-weight: 700;
+}
+
+/* Section headers */
+h2 {
+  margin: 18px 0 10px 22px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 18px 0 10px 22px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Paragraph defaults */
+p {
+  margin: 10px 22px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/* 2nd paragraph box (explicit ID in your HTML) */
+#paragraph2 {
+  width: 620px;            /* controls the exact box width */
+  margin: 12px 22px 18px;  /* position from left */
+  padding: 14px 16px;
+  border: 2px solid #2a2a2a;
+  background: #ffffff;
+  line-height: 1.8;        /* requirement calls this out */
+  box-sizing: border-box;
+}
+
+/* 4th and 5th paragraphs: your HTML uses class="blue" for both */
+.blue {
+  color: #1e66d0; /* strong blue */
+}
+
+
+a {
+  color: #1b57c8;           /* default link color for list links */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6a2da8;
+}
+
+
+a[href*="w3schools"] {
+  color: #0b8a4a;           /* green */
+  font-weight: 600;
+}
+
+ol {
+  margin: 8px 0 18px 55px;
+  list-style-type: decimal-leading-zero; /* 01, 02, 03... */
+}
+
+/* Table styles: different header/cell backgrounds + collapsed borders */
+table {
+  margin: 10px 22px 28px;
+  border-collapse: collapse; /* overlapping borders requirement */
+  width: 820px;
+  max-width: calc(100% - 44px);
+  background: #ffffff;
+}
+
+th, td {
+  border: 2px solid #222; /* border applies to ALL cells */
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #d7dbe2; /* header background */
+  font-weight: 700;
+}
+
+td {
+  background: #f3f5f8; /* cell background */
+}
