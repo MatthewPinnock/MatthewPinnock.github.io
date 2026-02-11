@@ -72,16 +72,18 @@ article:hover p:last-of-type a {
   color: #0000ee;
 }
 
-a::after {
+a[href*="google"]::after {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
   margin-left: 8px;
-  background-image: url("arrow.png");
+  vertical-align: text-bottom;
+  background-image: url("./arrow.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 
 #menuItems button {
   width: 100%;
