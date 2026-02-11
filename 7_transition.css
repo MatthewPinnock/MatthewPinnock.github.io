@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav#menuItems {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 100vh;
+  background: #000;
+  z-index: 10;
+}
+
+main {
+  margin-left: 230px;
+}
+
+header {
+  background: red;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header p {
+  margin: 0;
+  font-size: 48px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 25px 0 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 52px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px 60px 60px;
+  justify-content: center;
+}
+
+article {
+  width: 260px;
+  color: #b8b8b8;
+  transform: scale(1);
+  transition: color 2s, transform 2s;
+  transform-origin: top center;
+}
+
+article:hover {
+  color: #5e5e5e;
+  transform: scale(1.06);
+}
+
+article > p:first-of-type::first-letter {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+}
+
+article p:last-of-type a {
+  color: #0000ee;
+}
+
+article:hover p:last-of-type a {
+  color: #0000ee;
+}
+
+a[href*="google.com"]::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  vertical-align: text-bottom;
+  background-image: url("arrowarrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#menuItems button {
+  width: 100%;
+  padding: 16px 10px;
+  border: 1px solid #000;
+  background: #0a27ff;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#menuItems button:hover {
+  background: #0017b8;
+}
+
+#jumpMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  background: #0a27ff;
+}
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+  display: block;
+}
+
+#jumpMenu li a {
+  display: block;
+  padding: 12px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px solid #000;
+}
+
+#jumpMenu li a:hover {
+  background: #ffffff;
+  color: #0a27ff;
+}
+
+#thanks {
+  margin: 0 60px 40px;
+  padding: 20px 30px;
+  border: 2px solid #000;
+  background: #79c8ff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+}
+
+#thanks a {
+  color: #0000ee;
+}
