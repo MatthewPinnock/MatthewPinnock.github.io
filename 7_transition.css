@@ -72,13 +72,12 @@ article:hover p:last-of-type a {
   color: #0000ee;
 }
 
-a[href*="google.com"]::after {
+a::after {
   content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
   margin-left: 8px;
-  vertical-align: text-bottom;
   background-image: url("arrow.png");
   background-repeat: no-repeat;
   background-size: contain;
