@@ -1,1 +1,50 @@
-//hello
+<!-- pokemon.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Team Builder</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="pokemon.js"></script>
+  </head>
+
+  <body>
+    <main id="app">
+      <section id="content-box">
+        <header id="search-bar">
+          <label for="poke-input">Name or ID</label>
+          <div class="row">
+            <input id="poke-input" type="text" placeholder="e.g., snorlax or 143" autocomplete="off" />
+            <button id="find-btn" type="button">Find</button>
+          </div>
+          <p id="status" aria-live="polite"></p>
+        </header>
+
+        <section id="pokemon-info">
+          <img id="pokemon-img" alt="" />
+
+          <audio id="pokemon-audio" controls preload="none"></audio>
+
+          <div id="pokemon-types"></div>
+
+          <div id="moves-grid">
+            <select id="move-1"></select>
+            <select id="move-2"></select>
+            <select id="move-3"></select>
+            <select id="move-4"></select>
+          </div>
+
+          <button id="add-btn" type="button" disabled>Add to Team</button>
+        </section>
+
+        <section id="team-section">
+          <h2>Your Team</h2>
+          <div id="team-list"></div>
+          <button id="clear-team" type="button">Clear Team</button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
